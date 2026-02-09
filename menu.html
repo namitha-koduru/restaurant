@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Luccica Menu</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">Luccica 🍽️</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active">Menu</a>
+  </nav>
+  <div class="top-actions">
+    <button class="btn cart-btn" onclick="openCart()">🛒 Cart (<span id="cartCount">0</span>)</button>
+    
+  </div>
+</header>
+
+<section class="menu-section">
+  <h1 class="menu-title">Our Menu</h1>
+
+  <div class="menu-tabs">
+    <button onclick="showMenu('breakfast', this)">Breakfast</button>
+    <button onclick="showMenu('lunch', this)">Lunch</button>
+    <button onclick="showMenu('dinner', this)">Dinner</button>
+    <button onclick="showMenu('soups', this)">Soups</button>
+    <button onclick="showMenu('snacks', this)">Snacks</button>
+    <button onclick="showMenu('drinks', this)">Drinks</button>
+  </div>
+
+  <div id="menu-items" class="menu-grid"></div>
+</section>
+
+
+
+<div id="cartPopup" class="popup">
+  <div class="popup-box">
+    <h2>🛒 Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <h3 id="cartTotal"></h3>
+    <button class="btn cart-btn" onclick="document.getElementById('cartPopup').style.display='none'">
+      Close
+    </button>
+  </div>
+</div>
+
+</body>
+</html>

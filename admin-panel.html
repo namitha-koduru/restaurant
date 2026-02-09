@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel - Luccica</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/admin.js"></script>
+</head>
+<body>
+
+<h1 style="text-align:center">Admin Panel 🍽️</h1>
+
+<div class="admin-box">
+  <input id="foodName" placeholder="Food name">
+  <input id="foodPrice" type="number" placeholder="Price">
+  <select id="foodCategory">
+    <option>breakfast</option>
+    <option>lunch</option>
+    <option>dinner</option>
+    <option>drinks</option>
+  </select>
+  <button onclick="addFood()">Add Food</button>
+</div>
+
+<h2 style="text-align:center">Manage Items</h2>
+<div id="adminList" class="menu-grid"></div>
+
+</body>
+</html>
