@@ -385,3 +385,76 @@ html { scroll-behavior: smooth; }
 .rating { color:#e07a2f; font-weight:600; }
 .menu-card textarea { width:100%; height:50px; margin:8px 0; }
 #cartItems button { margin:0 4px; }
+
+/* HERO SECTION */
+
+.hero{
+  height:90vh;
+  background:url('../assets/culture1.jpg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  padding-left:8%;
+  position:relative;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.5);
+}
+
+.hero-text{
+  position:relative;
+  color:white;
+  max-width:500px;
+}
+
+.hero-text h1{
+  font-size:55px;
+}
+
+.main-btn{
+  background:#ff7a18;
+  padding:12px 25px;
+  border-radius:25px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+}
+
+/* FOOD CARD HOVER */
+
+.food-card{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  transition:0.3s;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.food-card:hover{
+  transform:translateY(-10px) scale(1.02);
+}
+
+/* REVIEWS */
+
+.reviews{
+  padding:70px 10%;
+  text-align:center;
+  background:#fafafa;
+}
+
+.review-grid{
+  display:flex;
+  gap:25px;
+  justify-content:center;
+  margin-top:30px;
+}
+
+.review-card{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  width:250px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}

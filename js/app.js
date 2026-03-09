@@ -144,3 +144,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let firstBtn = document.querySelector(".menu-tabs button");
   showMenu("breakfast", firstBtn);
 });
+document.querySelectorAll("a[href^='#']").forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
